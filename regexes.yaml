@@ -4674,6 +4674,16 @@ device_parsers:
     model_replacement: 'Desktop'
 
   ##########
+  # Spiders bei der taz (still a hack...)
+  ##########
+  - regex: '(Friendica|Lily of the valley|Snacktory|Traackr|GigablastOpenSource|memoryBot|seoscanners|Cliqzbot|Twitterbot|yacybot|jaribot|Yahoo\!\ Slurp|heritrix|robots|proximic|Java|FeedlyBot|HTTP_Request2|pycurl|MagentaNews|Domain\ Re-Animator\ Bot|Simple\ RSS\ Widget|PF\:INET)'
+    regex_flag: 'i'
+    device_replacement: 'Spider'
+    brand_replacement: 'Spider'
+    model_replacement: 'Desktop'
+
+
+  ##########
   # Generic Feature Phone
   # take care to do case insensitive matching
   ##########
